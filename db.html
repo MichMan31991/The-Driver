@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<style>
+</style>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title> Driver's Database</title>
+</head>
+<body>
+  <section>
+    <div class="login-form">
+      <h4>Username</h4>
+      <div class="usernanme-input">
+        <i class="fas fa-user"></i>
+        <input type="email" placeholder="Type your username" id="username">
+      </div>
+      <h4>Password</h4>
+      <div class="password-input">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="password" placeholder="Type your password">
+      </div>
+      <p>Forgot Password</p>
+    </div>
+    <button class="login-btn" onclick="func()"> LOG IN </button>
+    <p>Not a member?<br><a href="registration_db.html">Sign Up</a></p>
+  </section>
+  <script>
+  function func(){
+    var email = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+    if (email == 'jay.green.31991@gmail.com' && pass == 'Db12345'){
+      alert("successful")
+      window.location.assign("Drivers_page.html")
+    }
+    else{
+      alert("Wrong entry, invalid")
+    }
+  }
+  </script>
+</body>
+</html>
